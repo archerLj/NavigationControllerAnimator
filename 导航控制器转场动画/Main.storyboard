@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cqo-Bq-X5K">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="导航控制器转场动画" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeq-g3-9K1">
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2Lj-L9-yPu"/>
+                                    <constraint firstAttribute="width" constant="44" id="fZq-Fv-uY3"/>
+                                </constraints>
+                                <state key="normal" title="Tap">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9lu-kN-jp4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aeq-g3-9K1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="d2W-sI-rgl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aeq-g3-9K1" secondAttribute="bottom" constant="20" id="d9k-qH-OX4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6EA-vX-jJc"/>
+                    <connections>
+                        <outlet property="myButton" destination="aeq-g3-9K1" id="XcV-sX-19m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="-546"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="2bL-da-0k0">
+            <objects>
+                <viewController storyboardIdentifier="nextViewControllerSB" id="mB9-yy-L7Z" customClass="NextViewController" customModule="导航控制器转场动画" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xk2-OP-68Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="glz-wl-BU1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4fq-SU-FT3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二哈.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jeS-nE-RiN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BDe-g7-ksJ"/>
+                                    <constraint firstAttribute="width" constant="240" id="UkB-Vn-GRg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你需要冷静一下，看着我，这是几？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niQ-SZ-WUO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMt-i3-is0">
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9gK-yC-t9C"/>
+                                    <constraint firstAttribute="width" constant="44" id="wvu-eR-gBw"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jeS-nE-RiN" firstAttribute="centerY" secondItem="4fq-SU-FT3" secondAttribute="centerY" id="9S0-4A-uBZ"/>
+                            <constraint firstItem="glz-wl-BU1" firstAttribute="top" secondItem="GMt-i3-is0" secondAttribute="bottom" constant="20" id="Cmc-GK-tFz"/>
+                            <constraint firstItem="jeS-nE-RiN" firstAttribute="centerX" secondItem="4fq-SU-FT3" secondAttribute="centerX" id="MwK-VQ-tTh"/>
+                            <constraint firstItem="niQ-SZ-WUO" firstAttribute="centerX" secondItem="4fq-SU-FT3" secondAttribute="centerX" id="b9i-Px-TqT"/>
+                            <constraint firstItem="GMt-i3-is0" firstAttribute="leading" secondItem="4fq-SU-FT3" secondAttribute="leading" constant="20" id="g1f-FC-kb1"/>
+                            <constraint firstItem="niQ-SZ-WUO" firstAttribute="top" secondItem="jeS-nE-RiN" secondAttribute="bottom" constant="20" id="nJU-Ll-GtU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ydq-O5-RPr"/>
+                    <connections>
+                        <outlet property="imageView" destination="jeS-nE-RiN" id="Syi-wf-r5Y"/>
+                        <outlet property="maskLayer" destination="GMt-i3-is0" id="dwF-8f-ldh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeb-0h-GYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="-546"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="keQ-jg-lCk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cqo-Bq-X5K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rg7-i8-S5l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ks8-Zu-u2w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fct-LA-ylj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="-545.57721139430294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="二哈.jpg" width="478" height="468"/>
+    </resources>
+</document>
